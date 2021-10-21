@@ -1,0 +1,49 @@
+@import './utils/variables';
+@import './utils/global-settings';
+
+// HEADER
+
+@import './components/header';
+@import './components/nav';
+
+//cCONTACTS-NAV
+@import './components/contacts-nav';
+
+// LOGO
+@import './components/logo';
+
+// HERO
+@import './components/hero';
+
+//MODAL
+@import './components/modal';
+
+// SECTION
+@import './components/feauters';
+
+//FILTERS
+@import './components/filters';
+
+//ACTIVITY
+@import './components/activity';
+
+//WORK
+@import './components/work';
+
+//TEAM
+@import './components/team';
+
+//SOCLIST
+@import './components/soc-list';
+
+//CLIENTS
+@import './components/clients';
+
+//FOOTER
+@import './components/footer';
+
+//SIGNUP
+@import './components/signup';
+
+//FORM
+@import './components/form';
