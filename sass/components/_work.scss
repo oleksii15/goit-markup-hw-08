@@ -1,3 +1,9 @@
+.work {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
 .work__title,
 .team__title {
   margin-bottom: 50px;
