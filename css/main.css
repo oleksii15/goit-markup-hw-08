@@ -77,7 +77,6 @@ img {
 
 .header {
   border-bottom: 1px solid #eeeeee;
-  position: relative;
 }
 
 .header__container {
@@ -87,6 +86,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .menu-button {
@@ -97,6 +97,12 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .menu-button .icon-cross {
@@ -125,6 +131,16 @@ img {
 
 .menu-container.is-open {
   display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
 }
 
 .nav__list {
@@ -357,6 +373,7 @@ img {
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -385,6 +402,18 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 450px;
+    width: 100%;
+  }
 }
 
 .modal__closebtn {
@@ -790,6 +819,11 @@ soc-link:focus .soc-link__icon {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__link:hover .clients__svg,
+.clients__link:focus .clients__svg {
+  fill: #2196f3;
 }
 
 .clients__icon:focus,

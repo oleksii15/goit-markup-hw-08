@@ -22,11 +22,13 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="container header__container">
-        <nav class="nav">
+           <div class="container header__container">
+        
            <a href="./index.html" class="logo--black">
             <span class="logo--black__logo">Web</span>Studio
           </a>
+          <div class="menu-container" id="menu-container" data-menu>
+            <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link--current">Студия</a>
@@ -57,9 +59,10 @@
             >
           </li>
         </ul>
+        </div>
       </div>
       <button type="button" 
-      class="menu-button is open"
+      class="menu-button is-open"
       aria-expanded="false"
       aria-controls="menu-container"
       data-menu-button>
@@ -69,9 +72,7 @@
 </svg>
 
       </button>
-      <div class="menu-container" id="menu-container" data-menu>
-        Контент Меню
-      </div>
+     
     </header>
 
     <main>
@@ -526,7 +527,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-     <script defer src="js/menu.js"></script>
+     <script defer src="js/mobile-menu.js"></script>
 
   </body>
 </html>

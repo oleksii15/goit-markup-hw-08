@@ -1,11 +1,11 @@
 .header {
   border-bottom: 1px solid #eeeeee;
-  position: relative;
 }
 
 .header__container {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .menu-button {
@@ -14,6 +14,9 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-button .icon-cross {
@@ -40,5 +43,15 @@
   font-size: 20px;
   &.is-open {
     display: block;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
