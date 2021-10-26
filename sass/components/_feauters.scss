@@ -6,9 +6,7 @@
   font-size: 14px;
   line-height: 1.14;
   margin-top: 30px;
-  @media screen and (max-width: 768px) {
-    text-align: center;
-  }
+  text-align: start;
 }
 
 .features__list {
@@ -24,6 +22,7 @@
 }
 
 .features__item {
+  text-align: start;
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
