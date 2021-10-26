@@ -23,11 +23,11 @@
   <body class="page">
     <header class="header">
            <div class="container header__container">
-        
-           <a href="./index.html" class="logo--black">
+             <div class="nav__notmobile">
+          <a href="./index.html" class="logo--black">
             <span class="logo--black__logo">Web</span>Studio
           </a>
-          <div class="menu-container" id="menu-container" data-menu>
+         
             <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -60,18 +60,46 @@
           </li>
         </ul>
         </div>
-      </div>
-      <button type="button" 
-      class="menu-button is-open"
+     
+      <button type="button" class="nav__button nav__button--open
+       js-open-menu" 
       aria-expanded="false"
-      aria-controls="menu-container"
-      data-menu-button>
-<svg width="40" height="40" aria-label="Переулючатель мобтльного меню">
-  <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
-  <use class="icon-cross" href="./images/sprite.svg#icon-menu"></use>
+       aria-controls="mobile-menu">
+      <svg width="40" height="40" aria-label="Переулючатель мобтльного меню">
+    <use class="icon-cross" href="./images/sprite.svg#icon-menu"></use>
 </svg>
+</button>
+</div>
+ <div class="mobile-menu js-menu-container" id="mobile-menu">
+            <button type="button" class="nav__button js-close-menu">
+                <svg class="nav__icon" width="40px" height="40px" aria-label="переключатель мобильного меню">
+                    <use href="./images/sprite.svg#icon-cross" class="nav__button--cross"></use>
+                </svg>
+            </button>
+             <div class="mobile__position mobile-menu__list">
+                    
+                        <div class="mobile-menu__item"> <a href="" class="link mobile-menu__link mobile-menu__link--curent">Студия</a></div>
+                        <div class="mobile-menu__item"><a href="./portfolio.html" class="link mobile-menu__link">Портфолио</a></div>
+                        <div class="mobile-menu__item"><a href="" class="link mobile-menu__link">Контакты</a></div>
+                    </div>
+                    <div class="mobile__position">
+                       <ul class="mobile-contacts__list list">
+                    <li class="mobile-contacts__item"> <a href="tel:+380961111111"
+                            class="link mobile-contacts__link mobile-contacts__link--tel">+38 096 111 11 11</a></li>
+                    <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com"
+                            class="link mobile-contacts__link">info@devstudio.com </a></li>
+                </ul>
+                <ul class="mobile-socblok list">
+                    <li class="mobile-socblok__item"> <a href="" class="link mobile-socblok__link">Instagram</a></li>
+                    <li class="mobile-socblok__item"><a href="" class="link mobile-socblok__link">Twitter </a></li>
+                    <li class="mobile-socblok__item"><a href="" class="link mobile-socblok__link">Facebook</a></li>
+                    <li class="mobile-socblok__item"><a href="" class="link mobile-socblok__link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
-      </button>
+      
      
     </header>
 
@@ -527,6 +555,9 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
      <script defer src="js/mobile-menu.js"></script>
 
   </body>
