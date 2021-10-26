@@ -14,7 +14,15 @@
   background-size: cover;
   padding-bottom: 200px;
   padding-top: 200px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url(../images/overlay2x.jpg);
+    }
+  }
 }
+
 .hero__title {
   margin: 0 auto;
   color: $white-text-color;

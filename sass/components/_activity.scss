@@ -37,7 +37,7 @@
 
 .activity__item-bottom {
   padding: 20px 24px 20px 24px;
-  @media (min-width: $tablet) and (max-width: 1199px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     flex-grow: 1;
   }
 }
