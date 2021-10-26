@@ -38,6 +38,15 @@
   margin-right: 93px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 480px) {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .logo--white {
   margin: auto 0;
@@ -50,4 +59,7 @@
   margin-bottom: 20px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
