@@ -16,6 +16,9 @@
   line-height: 1.15;
   color: $title-text-color;
   margin-bottom: 12px;
+  @media (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .form__label {
@@ -87,6 +90,11 @@
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: $accent-color;
+  @media (min-width: 1200px) {
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__label {
@@ -97,6 +105,10 @@
   font-weight: normal;
   line-height: 1.71;
   color: $primary-text-color;
+  @media (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form__btn {

@@ -8,22 +8,38 @@
 }
 
 .activity {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * 30px);
-  margin-top: calc(-1 * 30px);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: -15px;
+  }
 }
 .activity__item {
-  box-sizing: border-box;
-  border: 1px solid #eeeeee;
-  width: 370px;
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
 }
 
 .activity__item-bottom {
   padding: 20px 24px 20px 24px;
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    flex-grow: 1;
+  }
 }
 
 .activity__text {
@@ -45,6 +61,10 @@
   &:hover .activity__overlay,
   &:focus .activity__overlay {
     transform: translateY(0);
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -69,6 +89,12 @@
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
+  @media (max-width: 480px) {
+    padding-top: 10px;
+    overflow-y: scroll;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 
 .description__text {

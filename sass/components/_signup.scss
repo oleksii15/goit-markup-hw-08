@@ -4,6 +4,11 @@
 
 .signup-label {
   margin-right: 12px;
+  @media (min-width: $desctop) {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 
 .signup__title {
@@ -12,6 +17,9 @@
   color: $white-text-color;
   font-weight: 700;
   text-transform: uppercase;
+  @media (min-width: $desctop) {
+    justify-content: left;
+  }
 }
 .signup-email {
   padding: 15px 16px;
@@ -26,7 +34,10 @@
 }
 
 .signup__form {
-  display: flex;
+  text-align: center;
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .signup__btn {

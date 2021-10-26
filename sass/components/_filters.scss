@@ -7,6 +7,12 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .filters__button {
