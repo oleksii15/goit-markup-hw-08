@@ -1,4 +1,5 @@
 .filters__item {
+  margin-bottom: 10px;
   &:not(:last-child) {
     margin-right: 8px;
   }
@@ -6,12 +7,13 @@
 .filters__list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
-  @media (min-width: 768px) {
-    justify-content: center;
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 50px;
+    justify-content: center;
   }
 }
 
@@ -34,4 +36,8 @@
     cursor: pointer;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
+}
+
+.filters-button:nth-child(n + 1) {
+  margin-bottom: 10px;
 }
