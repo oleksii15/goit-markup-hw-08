@@ -424,7 +424,6 @@ img {
 
 .hero {
   text-align: center;
-  max-width: 1600px;
   height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,6 +434,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 600px;
+  }
 }
 
 .hero-overlay {
@@ -988,6 +993,7 @@ img {
   font-size: 28px;
   line-height: 1.179;
   margin-bottom: 30px;
+  color: #212121;
 }
 
 @media (min-width: 1200px) {
@@ -1151,14 +1157,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+  padding: 0;
 }
 
 .clients__blok {
-  margin-right: 30px;
-}
-
-.clients__blok:last-child {
-  margin-right: 0;
+  margin: 15px;
+  width: calc((100% - 60px) / 2);
 }
 
 @media screen and (min-width: 768px) {

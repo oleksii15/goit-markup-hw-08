@@ -15,12 +15,14 @@
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  padding: 0;
 }
 .clients__blok {
-  margin-right: 30px;
-  &:last-child {
-    margin-right: 0;
-  }
+  margin: 15px;
+  width: calc((100% - 60px) / 2);
+
   @media screen and (min-width: 768px) {
     width: calc((100% - 90px) / 3);
   }
@@ -28,7 +30,6 @@
     width: 170px;
   }
 }
-
 .clients__svg {
   width: 106px;
   height: 60px;
