@@ -31,8 +31,8 @@
   width: 20px;
   height: 20px;
   fill: $soc-logo-color;
-  soc-link:hover &,
-  soc-link:focus & {
+  .soc-link:hover &,
+  .soc-link:focus & {
     fill: $white-text-color;
   }
 }
