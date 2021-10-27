@@ -1,14 +1,12 @@
 /* CONTACTS */
 
 .contact {
-  display: flex;
-  margin-left: auto;
+  margin-left: 84px;
+  align-items: baseline;
   @media screen and (min-width: 1200px) {
     display: flex;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-direction: column;
-    margin-left: 84px;
+    align-items: baseline;
+    margin-left: auto;
   }
 }
 
@@ -32,14 +30,6 @@
   &:focus {
     color: $accent-color;
   }
-  @media screen and (min-width: 1200px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
 }
 
 .contact__icon {
@@ -51,8 +41,6 @@
   padding-top: 0;
   padding-bottom: 10px;
   @media screen and (min-width: 1200px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
 
@@ -85,8 +73,10 @@
 }
 
 .contact__item {
+  display: flex;
   @media screen and (max-width: 1199px) {
     margin-bottom: 10px;
+    margin-right: 0;
   }
   @media screen and (min-width: 1200px) {
     &:not(:last-child) {
