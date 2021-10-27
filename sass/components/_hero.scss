@@ -1,24 +1,86 @@
 .hero {
   text-align: center;
-  max-width: 1600px;
-  height: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 768px) {
+    height: 600px;
+  }
+}
+
+.hero-overlay {
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/overlay.jpg);
+    url(../images/overlay1xmob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-bottom: 200px;
   padding-top: 200px;
+  @media (min-width: 768px) {
+    height: 600px;
+  }
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/overlay1xmob.jpg);
+  background-size: 480px 400px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    & {
-      background-image: url(../images/overlay2x.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/overlay2xmob.jpg);
+  }
+  @media (min-width: 481px) {
+    width: 100%;
+    background-size: cover;
+    min-height: 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/overlay1xtab.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/overlay2xtab.jpg);
+    }
+  }
+  @media (min-width: 1200px) {
+    background-size: 1600px 600px;
+    max-width: 1600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/overlay1xdeck.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      max-width: 1600px;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/overlay2xdeck.jpg);
     }
   }
 }
@@ -34,6 +96,11 @@
   letter-spacing: 0.06em;
   margin-bottom: 30px;
   max-width: 696px;
+  @media (min-width: 768px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.364;
+  }
 }
 
 .hero__button {
