@@ -1324,7 +1324,7 @@ img {
 
 @media (min-width: 768px) {
   .footer__connect {
-    margin-right: 0;
+    margin-right: 164px;
     margin-left: 0;
   }
 }
@@ -1342,6 +1342,13 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .footer__title {
@@ -1455,6 +1462,9 @@ img {
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 1200px) {
@@ -1516,6 +1526,13 @@ img {
 
 .signup__btn:focus, .signup__btn:hover {
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .signup__btn {
+    margin-top: 10px;
+    margin-left: 80px;
+  }
 }
 
 .signup__btn-text {

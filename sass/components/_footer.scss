@@ -75,7 +75,7 @@
     margin-bottom: 60px;
   }
   @media (min-width: 768px) {
-    margin-right: 0;
+    margin-right: 164px;
     margin-left: 0;
   }
   @media (min-width: 1200px) {
@@ -86,6 +86,9 @@
 .footer__container {
   display: flex;
   align-items: baseline;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 }
 
 .footer__title {

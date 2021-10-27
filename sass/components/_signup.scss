@@ -19,6 +19,7 @@
   color: $white-text-color;
   font-weight: 700;
   text-transform: uppercase;
+  justify-content: center;
   @media (min-width: 1200px) {
     justify-content: left;
   }
@@ -61,6 +62,10 @@
   &:focus,
   &:hover {
     color: $white-text-color;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 10px;
+    margin-left: 80px;
   }
 }
 
