@@ -33,6 +33,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  @media (max-width: 767px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    max-width: 450px;
+    height: 609px;
+  }
+
   @media (min-width: 768px) {
     position: absolute;
     top: 50%;
