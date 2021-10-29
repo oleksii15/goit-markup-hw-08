@@ -19,6 +19,7 @@
   }
 }
 .activity__item {
+  border: 1px solid #eeeeee;
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;

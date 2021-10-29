@@ -1,3 +1,10 @@
+.features {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .features__title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -5,8 +12,9 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-top: 30px;
+
   text-align: start;
+  text-transform: uppercase;
   @media screen and (max-width: 768px) {
     text-align: center;
   }
