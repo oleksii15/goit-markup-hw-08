@@ -23,12 +23,13 @@
   <body class="page">
     </head>
   <body class="page">
-    <header class="header">
-           <div class="container header__container">
-               <div class="nav__notmobile">
-          <a href="./index.html" class="logo--black">
+     <header class="header">
+                 <div class="container header__container">
+                    <a href="./index.html" class="logo--black">
             <span class="logo--black__logo">Web</span>Studio
           </a>
+               <div class="nav__notmobile">
+         
        
             <nav class="nav">
           <ul class="nav__list list">
@@ -36,31 +37,33 @@
               <a href="./index.html" class="nav__link">Студия</a>
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link--current">Портфолио</a>
+              <a href="./portfolio.html" class="nav__link--current"> Портфолио</a>
             </li>
             <li class="nav__item">
-              <a href="./index.html" class="nav__link">Контакты</a>
+              <a href="./index.html" class="nav__link"> Контакты</a>
             </li>
           </ul>
         </nav>
+       
         <ul class="contact list">
           <li class="contact__item">
-            <a href="malito:info@devstudio.com" class="contact__link">
-              <svg class="contact__icon" width="16" height="12">
+            <a href="malito:info@devstudio.com" class="link contact__link" aria-label="имайл">
+              <svg class="contact__icon contact__icon--mail">
                         <use href="./images/sprite.svg#icon-envelope-hover"></use>
                       </svg>
                       info@devstudio.com
             </a>
           </li>
           <li class="contact__item">
-            <a href="tel:+380961111111" class="contact__link"
-              ><svg class="contact__icon" width="10" height="16">
+           <a href="tel:+380961111111" class="link contact__link contact__link--phone">
+              <svg class="contact__icon contact__icon--phone" aria-label="номер телефона">
                         <use href="./images/sprite.svg#icon-smartphone"></use>
                       </svg>
                       +38 096 111 11 11</a
             >
           </li>
         </ul>
+        
         </div>
      
      <button type="button" class="nav__button nav__button--open js-open-menu" aria-expanded="false"
@@ -78,9 +81,9 @@
         </button>
         <div class="mobile__position">
           <ul class="mobile-menu__list list">
-            <li class="mobile-menu__item"> <a href="./index.html" class="link mobile-menu__link">Студия</a>
+            <li class="mobile-menu__item"> <a href="./index.html" class="link mobile-menu__link ">Студия</a>
             </li>
-            <li class="mobile-menu__item"><a href="" class="link mobile-menu__link mobile-menu__link--curent">Портфолио
+            <li class="mobile-menu__item"><a href="./portfolio.html" class="link mobile-menu__link mobile-menu__link--curent">Портфолио
               </a>
             </li>
             <li class="mobile-menu__item"><a href="" class="link mobile-menu__link">Контакты</a></li>
@@ -101,8 +104,9 @@
           </ul>
         </div>
       </div>
-    
+           
     </header>
+
 
     <main>
       <section class="filters section">
