@@ -1,3 +1,9 @@
+.filters {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+  }
+}
+
 .filters__item {
   margin-bottom: 10px;
   &:not(:last-child) {

@@ -743,6 +743,12 @@ img {
           justify-content: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .filters {
+    padding-top: 60px;
+  }
+}
+
 .filters__item {
   margin-bottom: 10px;
 }
@@ -833,6 +839,12 @@ img {
 @media screen and (min-width: 1200px) {
   .activity {
     margin: -15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .activity {
+    padding-bottom: 60px;
   }
 }
 
