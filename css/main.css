@@ -1758,7 +1758,30 @@ img {
   fill: #2196f3;
 }
 
-.nav__button {
+.nav__open {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #212121;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__open {
+    display: none;
+  }
+}
+
+.nav__open:hover, .nav__open:focus {
+  color: #2196f3;
+  fill: currentColor;
+}
+
+.nav__close {
   position: absolute;
   top: 22px;
   right: 23px;
@@ -1774,18 +1797,14 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .nav__button {
+  .nav__close {
     display: none;
   }
 }
 
-.nav__button:hover, .nav__button:focus {
+.nav__close:hover, .nav__close:focus {
   color: #2196f3;
   fill: currentColor;
-}
-
-.nav__button.nav__button--open {
-  margin-left: auto;
 }
 
 .mobile-menu {
