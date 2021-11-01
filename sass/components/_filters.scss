@@ -5,20 +5,22 @@
 }
 
 .filters__item {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   &:not(:last-child) {
     margin-right: 8px;
   }
 }
 .filters__list {
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   @media (max-width: 767px) {
+    margin-bottom: 40px;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
-  @media (min-width: 768px) {
-    margin-bottom: 50px;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
     justify-content: center;
   }
 }

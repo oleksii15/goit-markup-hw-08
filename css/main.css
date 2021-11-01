@@ -750,7 +750,7 @@ img {
 }
 
 .filters__item {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .filters__item:not(:last-child) {
@@ -758,6 +758,7 @@ img {
 }
 
 .filters__list {
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,6 +769,7 @@ img {
 
 @media (max-width: 767px) {
   .filters__list {
+    margin-bottom: 40px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: start;
@@ -776,9 +778,9 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .filters__list {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -819,10 +821,6 @@ img {
   letter-spacing: 0.06em;
   margin-bottom: 4px;
   text-align: start;
-}
-
-.activity {
-  margin-top: 50px;
 }
 
 @media screen and (min-width: 768px) {
