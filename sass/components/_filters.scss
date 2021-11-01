@@ -10,6 +10,13 @@
     margin-right: 8px;
   }
 }
+
+.filters__item:nth-child(3) {
+  @media (max-width: 767px) {
+    margin-right: 0px;
+  }
+}
+
 .filters__list {
   margin-bottom: 50px;
   display: flex;

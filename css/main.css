@@ -569,6 +569,12 @@ img {
   pointer-events: none;
 }
 
+@media screen and (max-width: 768px) {
+  .backdrop {
+    padding: 93px 15px 93px 15px;
+  }
+}
+
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.6);
           transform: translate(-50%, -50%) scale(0.6);
@@ -594,9 +600,6 @@ img {
 
 @media (max-width: 767px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
     max-width: 450px;
@@ -755,6 +758,12 @@ img {
 
 .filters__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media (max-width: 767px) {
+  .filters__item:nth-child(3) {
+    margin-right: 0px;
+  }
 }
 
 .filters__list {
