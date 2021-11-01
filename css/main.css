@@ -220,6 +220,7 @@ img {
 
 /* CONTACTS */
 .contact {
+  margin-left: auto;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -236,6 +237,12 @@ img {
 
 .contact__item:not(:last-child) {
   margin-right: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  .contact__item:not(:last-child) {
+    margin-right: 0px;
+  }
 }
 
 .contact__link {
