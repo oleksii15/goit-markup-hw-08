@@ -1234,7 +1234,7 @@ img {
   text-align: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .clients__title {
     margin-bottom: 30px;
   }
