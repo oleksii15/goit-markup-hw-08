@@ -30,10 +30,19 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 60px) / 2);
-    margin: 15px;
-    display: flex;
+    &:not(:last-child) {
+      width: calc((100% - 60px) / 2);
+      margin: 15px;
+      display: flex;
+    }
   }
+
+  @media screen and (min-width: 768px) {
+    &:last-child {
+      margin-left: 15px;
+    }
+  }
+
   @media screen and (min-width: 1200px) {
     width: calc((100% - 90px) / 3);
     margin: 15px;

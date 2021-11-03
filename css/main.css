@@ -755,6 +755,7 @@ img {
 @media screen and (max-width: 1199px) {
   .filters {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -872,12 +873,18 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .activity__item {
+  .activity__item:not(:last-child) {
     width: calc((100% - 60px) / 2);
     margin: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .activity__item:last-child {
+    margin-left: 15px;
   }
 }
 
