@@ -875,6 +875,7 @@ img {
   .activity__item:last-child {
     margin-top: 15px;
     margin-left: 15px;
+    margin-bottom: 15px;
   }
 }
 
